@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_DataGridView));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -39,21 +42,22 @@
             this.button_Back = new System.Windows.Forms.Button();
             this.label_DataMahasiswaTeknologiInformasi = new System.Windows.Forms.Label();
             this.dataGridView_DMTI = new System.Windows.Forms.DataGridView();
-            this.prodiTIDataSet_DataGridView = new _086_ExeDataGridandNavBinding_B.ProdiTIDataSet_DataGridView();
-            this.mahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mahasiswaTableAdapter = new _086_ExeDataGridandNavBinding_B.ProdiTIDataSet_DataGridViewTableAdapters.MahasiswaTableAdapter();
             this.nIMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.namaMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alamatMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phoneMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.prodiTIDataSet_DataGridView = new _086_ExeDataGridandNavBinding_B.ProdiTIDataSet_DataGridView();
+            this.mahasiswaTableAdapter = new _086_ExeDataGridandNavBinding_B.ProdiTIDataSet_DataGridViewTableAdapters.MahasiswaTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DMTI)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet_DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet_DataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Back
             // 
+            this.button_Back.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button_Back.FlatAppearance.BorderSize = 0;
             this.button_Back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Back.Image = ((System.Drawing.Image)(resources.GetObject("button_Back.Image")));
@@ -80,6 +84,8 @@
             this.dataGridView_DMTI.AutoGenerateColumns = false;
             this.dataGridView_DMTI.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_DMTI.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataGridView_DMTI.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataGridView_DMTI.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("HelveticaNowDisplay Medium", 8F, System.Drawing.FontStyle.Bold);
@@ -96,28 +102,33 @@
             this.sexDataGridViewTextBoxColumn,
             this.phoneMhsDataGridViewTextBoxColumn});
             this.dataGridView_DMTI.DataSource = this.mahasiswaBindingSource;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("HelveticaNowDisplay Regular", 8F);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView_DMTI.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView_DMTI.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView_DMTI.Location = new System.Drawing.Point(0, 96);
             this.dataGridView_DMTI.Name = "dataGridView_DMTI";
+            this.dataGridView_DMTI.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("HelveticaNowDisplay Regular", 8F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView_DMTI.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView_DMTI.RowHeadersWidth = 62;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("HelveticaNowDisplay Regular", 8F);
+            this.dataGridView_DMTI.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView_DMTI.RowTemplate.Height = 28;
             this.dataGridView_DMTI.Size = new System.Drawing.Size(1258, 568);
             this.dataGridView_DMTI.TabIndex = 13;
             this.dataGridView_DMTI.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_DMTI_CellContentClick);
-            // 
-            // prodiTIDataSet_DataGridView
-            // 
-            this.prodiTIDataSet_DataGridView.DataSetName = "ProdiTIDataSet_DataGridView";
-            this.prodiTIDataSet_DataGridView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mahasiswaBindingSource
-            // 
-            this.mahasiswaBindingSource.DataMember = "Mahasiswa";
-            this.mahasiswaBindingSource.DataSource = this.prodiTIDataSet_DataGridView;
-            // 
-            // mahasiswaTableAdapter
-            // 
-            this.mahasiswaTableAdapter.ClearBeforeFill = true;
             // 
             // nIMDataGridViewTextBoxColumn
             // 
@@ -170,6 +181,20 @@
             this.phoneMhsDataGridViewTextBoxColumn.MinimumWidth = 8;
             this.phoneMhsDataGridViewTextBoxColumn.Name = "phoneMhsDataGridViewTextBoxColumn";
             // 
+            // mahasiswaBindingSource
+            // 
+            this.mahasiswaBindingSource.DataMember = "Mahasiswa";
+            this.mahasiswaBindingSource.DataSource = this.prodiTIDataSet_DataGridView;
+            // 
+            // prodiTIDataSet_DataGridView
+            // 
+            this.prodiTIDataSet_DataGridView.DataSetName = "ProdiTIDataSet_DataGridView";
+            this.prodiTIDataSet_DataGridView.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mahasiswaTableAdapter
+            // 
+            this.mahasiswaTableAdapter.ClearBeforeFill = true;
+            // 
             // Form_DataGridView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -178,12 +203,13 @@
             this.Controls.Add(this.dataGridView_DMTI);
             this.Controls.Add(this.button_Back);
             this.Controls.Add(this.label_DataMahasiswaTeknologiInformasi);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_DataGridView";
             this.Text = "Data Grid View";
             this.Load += new System.EventHandler(this.Form_DataGridView_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DMTI)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet_DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet_DataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -198,8 +198,9 @@
             this.Controls.Add(this.label_NoMahasiswa);
             this.Controls.Add(this.label_NamaMahasiswa);
             this.Controls.Add(this.label_DataMahasiswa);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form_Coba_DataGrid";
-            this.Text = "Form_Coba_DataGrid";
+            this.Text = "Data Grid";
             this.Load += new System.EventHandler(this.Form_Coba_DataGrid_Load);
             ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet_DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).EndInit();

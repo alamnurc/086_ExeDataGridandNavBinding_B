@@ -103,10 +103,12 @@
             // checkBox_Login
             // 
             this.checkBox_Login.AutoSize = true;
+            this.checkBox_Login.FlatAppearance.BorderSize = 0;
+            this.checkBox_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox_Login.Font = new System.Drawing.Font("HelveticaNowDisplay Regular", 7.999999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_Login.Location = new System.Drawing.Point(18, 352);
             this.checkBox_Login.Name = "checkBox_Login";
-            this.checkBox_Login.Size = new System.Drawing.Size(245, 28);
+            this.checkBox_Login.Size = new System.Drawing.Size(240, 28);
             this.checkBox_Login.TabIndex = 13;
             this.checkBox_Login.Text = "Saya merupakan administrator";
             this.checkBox_Login.UseVisualStyleBackColor = true;
@@ -114,6 +116,8 @@
             // button_Login
             // 
             this.button_Login.AutoSize = true;
+            this.button_Login.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_Login.FlatAppearance.BorderSize = 0;
             this.button_Login.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Login.Font = new System.Drawing.Font("HelveticaNowDisplay Regular", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Login.Location = new System.Drawing.Point(150, 406);
@@ -127,6 +131,8 @@
             // button_Keluar
             // 
             this.button_Keluar.AutoSize = true;
+            this.button_Keluar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button_Keluar.FlatAppearance.BorderSize = 0;
             this.button_Keluar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_Keluar.Font = new System.Drawing.Font("HelveticaNowDisplay Regular", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_Keluar.Location = new System.Drawing.Point(18, 406);
@@ -152,6 +158,7 @@
             this.Controls.Add(this.button_Login);
             this.Controls.Add(this.button_Keluar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form_Login";
             this.Text = "Data Mahasiswa";
