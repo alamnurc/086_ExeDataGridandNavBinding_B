@@ -46,14 +46,49 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form_DataBindingNavigation.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_DataBindingNavigation.Designer.cs">
+      <DependentUpon>Form_DataBindingNavigation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_DataGridView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_DataGridView.Designer.cs">
+      <DependentUpon>Form_DataGridView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Menu.Designer.cs">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProdiTIDataSet_DataGridView.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProdiTIDataSet_DataGridView.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_DataBindingNavigation.resx">
+      <DependentUpon>Form_DataBindingNavigation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_DataGridView.resx">
+      <DependentUpon>Form_DataGridView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Menu.resx">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -63,6 +98,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="ProdiTIDataSet_DataGridView.xsc">
+      <DependentUpon>ProdiTIDataSet_DataGridView.xsd</DependentUpon>
+    </None>
+    <None Include="ProdiTIDataSet_DataGridView.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProdiTIDataSet_DataGridView.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ProdiTIDataSet_DataGridView.xss">
+      <DependentUpon>ProdiTIDataSet_DataGridView.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
