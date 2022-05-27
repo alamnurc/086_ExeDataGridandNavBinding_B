@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace _086_ExeDataGridandNavBinding_B
 {
-    public partial class Form_DataGridView : Form
+    public partial class Form_Coba_DataGrid : Form
     {
-        public Form_DataGridView()
+        public Form_Coba_DataGrid()
         {
             InitializeComponent();
         }
 
-        private void Form_DataGridView_Load(object sender, EventArgs e)
+        private void Form_Coba_DataGrid_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'prodiTIDataSet_DataGridView.Mahasiswa' table. You can move, or remove it, as needed.
             this.mahasiswaTableAdapter.Fill(this.prodiTIDataSet_DataGridView.Mahasiswa);
@@ -26,15 +26,8 @@ namespace _086_ExeDataGridandNavBinding_B
 
         private void button_Back_Click(object sender, EventArgs e)
         {
-            new Form_Menu().Show();
+            new Form_DataGridView().Show();
             this.Close();
-        }
-
-        private void dataGridView_DMTI_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            this.Hide();
-            Form_Coba_DataGrid select = new Form_Coba_DataGrid();
-            select.Show();
         }
     }
 }

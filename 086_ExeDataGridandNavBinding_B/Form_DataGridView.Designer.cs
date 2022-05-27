@@ -80,7 +80,7 @@
             this.dataGridView_DMTI.AutoGenerateColumns = false;
             this.dataGridView_DMTI.BackgroundColor = System.Drawing.Color.White;
             this.dataGridView_DMTI.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("HelveticaNowDisplay Medium", 8F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
@@ -103,6 +103,7 @@
             this.dataGridView_DMTI.RowTemplate.Height = 28;
             this.dataGridView_DMTI.Size = new System.Drawing.Size(1258, 568);
             this.dataGridView_DMTI.TabIndex = 13;
+            this.dataGridView_DMTI.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_DMTI_CellContentClick);
             // 
             // prodiTIDataSet_DataGridView
             // 

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form_Coba_DataGrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Coba_DataGrid.Designer.cs">
+      <DependentUpon>Form_Coba_DataGrid.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_DataBindingNavigation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Coba_DataGrid.resx">
+      <DependentUpon>Form_Coba_DataGrid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_DataBindingNavigation.resx">
       <DependentUpon>Form_DataBindingNavigation.cs</DependentUpon>
     </EmbeddedResource>

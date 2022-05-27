@@ -54,15 +54,15 @@
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.mahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.prodiTIDataSet_DataGridView = new _086_ExeDataGridandNavBinding_B.ProdiTIDataSet_DataGridView();
             this.mahasiswaBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.mahasiswaTableAdapter = new _086_ExeDataGridandNavBinding_B.ProdiTIDataSet_DataGridViewTableAdapters.MahasiswaTableAdapter();
+            this.mahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator)).BeginInit();
             this.bindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet_DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // button_Back
@@ -176,7 +176,7 @@
             // 
             this.label_DataMahasiswa.Dock = System.Windows.Forms.DockStyle.Top;
             this.label_DataMahasiswa.Font = new System.Drawing.Font("HelveticaNowDisplay Black", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_DataMahasiswa.Location = new System.Drawing.Point(0, 38);
+            this.label_DataMahasiswa.Location = new System.Drawing.Point(0, 33);
             this.label_DataMahasiswa.Name = "label_DataMahasiswa";
             this.label_DataMahasiswa.Size = new System.Drawing.Size(418, 96);
             this.label_DataMahasiswa.TabIndex = 25;
@@ -296,7 +296,7 @@
             this.bindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator.Name = "bindingNavigator";
             this.bindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator.Size = new System.Drawing.Size(418, 38);
+            this.bindingNavigator.Size = new System.Drawing.Size(418, 33);
             this.bindingNavigator.TabIndex = 14;
             this.bindingNavigator.Text = "bindingNavigator1";
             // 
@@ -338,9 +338,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator)).EndInit();
             this.bindingNavigator.ResumeLayout(false);
             this.bindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet_DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
